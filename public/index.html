@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtr">
+  <head>
+    <meta charset="utf-8">
+    <title>پیامرسان ما!</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="layer"></div>
+    <audio id="pop" src="pop_up_tone_phone_n__.mp3" autoplay='off'></audio>
+    <div class="container">
+      <div class="fstyle">
+        <h1 id="welcome">!ما</h1><br>
+        <button id="l">ورود</button><br>
+        <div id="s">حساب کاربری ندارید؟ <br> <span id="reg">!همین الان ثبت نام کنید</span> </div>
+      </div>
+    </div>
+    <section id="term_conta">
+      <span id="copy">Copyright &copy 2020 GOFTAAM <br>تمام حقوق محفوظ است</span>
+    </section>
+      <div class="si">
+        <div class="formside">
+            <div class="mim" id="mimo">عضویت</div>
+            <div class="accept">
+              <p id="accept">با ثبت نام شما با <span>قوانین ما</span> موافقت میکنید</p>
+            </div>
+            <div class="gosubmit">
+              <p id="gosubmit">حساب کاربری دارید؟ <span id="gos">وارد شوید</span> </p>
+            </div>
+        </div>
+        <form class="sign_in">
+          <input id="usr" type="text" name="user" value="" placeholder="یک نام کاربری انتخاب کنید." required><br>
+          <input id="email" type="email" name="email" value="" placeholder="یک ایمیل معتبر وارد کنید" required><br>
+          <input id="pass" type="password" name="pass" value="" placeholder="یک رمز عبور انتخاب کنید." required><br>
+          <input id="passc" type="password" name="passc" value="" placeholder="رمز عبور را دوباره وارد کنید" required> <br> <div class="error"></div> <br>
+          <button id="s_s">عضویت</button>
+        </form>
+      </div>
+      <div class="li">
+        <div class="formside">
+          <div class="mim" id="mimo2">ورود</div>
+          <label id="forkeep" for="keep">مرا داخل نگه دار</label>
+          <input id="keep" type="checkbox" name="" value="" autocomplete="off">
+          <div class="check"></div>
+          <div class="gologin">
+            <p id="gologin">حساب کاربری ندارید؟ <span id="gol">ثبت نام کنید</span> </p>
+          </div>
+        </div>
+        <form class="log_in">
+            <input id="usrl" type="text" name="userl" value="" placeholder="نام کاربری خود را وارد کنید" required><br>
+            <input id="passl" type="password" name="passl" value="" placeholder="رمز عبور خود را وارد کنید" required><br>
+          <button id="s_l">ورود</button>
+        </form>
+      </div>
+    <div class="chatbody">
+      <div class="nc_con">
+        <div class="navclick"></div>
+      </div>
+      <div class="group">
+        <div class="messagerlogo">!ما</div>
+        <div class="groups" >
+          <input id="search" lang="fa" dir="rtl" type="text" name="s" value="" placeholder="جست وجو..." autocomplete="off" >
+          <div class="scont">
+            <div class="search">
+            </div>
+            <div class="s_area">
+
+            </div>
+          </div>
+        </div>
+      <!--<form class="upload" action="/style.css" method="get">
+        <input id="upload" type="text" name="" value="">
+        <input id="sub" type="submit" name="" value="">
+      </form>-->
+      </div>
+      <div class="addroom"><div class="plus">+</div></div>
+      <div class="chatbox" id="ch1">
+        <nav class="chatnav" id="chatnav">
+          <ul class="onlineu" id="onlineu">
+          </ul>
+        </nav>
+        <div class="msg_area" id="cha1"></div>
+        <form class="main" id="main" action="">
+          <input dir="rtl" class="in" id="msg" autocomplete="off" placeholder="...پیامی بنویسید" />
+          <input id='uname' type="hidden" autocomplete="off" >
+          <button class="in" id="go">برو</button>
+        </form>
+      </div>
+    </div>
+    <div class="deletechat">
+      <ul class="dchlist">
+        <li>پاک کردن چت</li>
+      </ul>
+    </div>
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="index.js"></script>
+</html>
